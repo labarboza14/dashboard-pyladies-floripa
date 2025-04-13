@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - PYLADIES FLORIPA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .chart {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Dashboard - PYLADIES FLORIPA</h1>
+    <h3>Análise das inscrições da Escola PYLADIES FLORIPA</h3>
+    
+    <div class="chart">
+        <h4>Distribuição por Faixa Etária</h4>
+        {{ graph1 | safe }}
+    </div>
+
+    <div class="chart">
+        <h4>Você já conhecia a Linuxtips?</h4>
+        {{ graph2 | safe }}
+    </div>
+
+    <div class="chart">
+        <h4>Área de Trabalho</h4>
+        {{ graph3 | safe }}
+    </div>
+
+    <div class="chart">
+        <h4>Faixa de Renda</h4>
+        {{ graph4 | safe }}
+    </div>
+
+    <div class="chart">
+        <h4>Cursos mais escolhidos</h4>
+        {{ graph5 | safe }}
+    </div>
+
+</body>
+</html>
